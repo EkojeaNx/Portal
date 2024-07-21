@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
     <!-- Project from https://start.vaadin.com/project/7b935b29-9a00-4545-ad0b-44a72f9ba46b -->
     <groupId>com.kahveyazilim.portal</groupId>
-    <artifactId>portaltakpsstem</artifactId>
-    <name>portaltakpsstem</name>
+    <artifactId>portalistakipsistemi</artifactId>
+    <name>portalistakipsistemi</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -58,15 +58,39 @@
             <version>2.0.0</version>
         </dependency>
 
+        <!-- h2 -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
 
+        <!-- JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- MySql -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.3.0</version>
+        </dependency>
+
+        <!-- Spring Security -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>3.2.4</version>
         </dependency>
 
         <dependency>
