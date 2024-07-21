@@ -1,6 +1,8 @@
 package com.kahveyazilim.portal;
 
+import com.kahveyazilim.portal.Ayarlar.TemelAyarlar;
 import com.vaadin.flow.component.page.AppShellConfigurator;
+import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
 import com.vaadin.flow.theme.lumo.Lumo;
 import org.springframework.boot.SpringApplication;
@@ -14,7 +16,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-@Theme(value = "portaltakpsstem", variant = Lumo.DARK)
+@Theme(value = "portalistakipsistemi", variant = Lumo.DARK)
+@PWA(
+        name = TemelAyarlar.PROJE_ADI,
+        shortName = TemelAyarlar.PROJE_KISA_ADI,
+        description = TemelAyarlar.PROJE_ACIKLAMA,
+        iconPath = TemelAyarlar.PROJE_ICON_LINKI,
+        offlinePath = ""
+)
 public class Application implements AppShellConfigurator {
 
     public static void main(String[] args) {
